@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.float {
+    float: left;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* layout */
+.contenitore {
+    width: 80% ;
+    margin: 0 auto;
+    background-color: bisque;
+    /* height: 20px; */
+}
+
+.intestazione {
+    height: 5em;
+    background-color: brown;
+}
+
+
+.fine-pagina {
+    height: 3em;
+    background-color: coral;
+}
+
+.corpo-centrale {
+    margin-top: 10px;
+}
+.colonna-sinistra, 
+.colonna-destra {
+    /* height: 10em; */
+    width: 25%;
+    background-color: cornflowerblue;
+    
+
+}
+
+
+.colonna-centrale {
+    width: calc(50% - 20px);
+    height: 10em;
+    background-color: darkblue;
+    margin: 0 10px;
+}
+
+[class*="colonna-"] {
+    /* border: 10px solid black; */
+    float: left;
+    
+}
+
+.bg-red {
+    background-color: rgba(10, 20, 50, 0.5);
+}
